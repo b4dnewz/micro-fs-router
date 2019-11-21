@@ -1,0 +1,56 @@
+{
+  "name": "micro-fs-router",
+  "version": "0.0.1",
+  "description": "A micro plugin that leverage the filesystem",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "pretest": "npm run lint",
+    "prebuild": "npm run test",
+    "lint": "tslint -p . --fix",
+    "test": "jest",
+    "test:cover": "jest --coverage",
+    "watch": "tsc --watch",
+    "build": "tsc"
+  },
+  "keywords": [
+    "micro",
+    "micro-plugin",
+    "micro-extension",
+    "microservices",
+    "router",
+    "route",
+    "filesystem",
+    "filesystem-router",
+    "request",
+    "rest"
+  ],
+  "author": {
+    "name": "b4dnewz",
+    "email": "filippo@codekraft.it",
+    "url": "https://b4dnewz.github.io/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "micro": "^9.3.4"
+  },
+  "devDependencies": {
+    "@types/got": "^9.6.9",
+    "@types/jest": "^24.0.23",
+    "@types/micro": "^7.3.3",
+    "@types/node": "^12.12.11",
+    "coveralls": "^3.0.8",
+    "got": "^9.6.0",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
